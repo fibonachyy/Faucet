@@ -1,0 +1,51 @@
+@import "../styles/variables";
+.top-navbar{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 45px;
+    .left-side{
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        label{
+            color: $second;
+        }
+        span{
+            color: $primary;
+        }
+    }
+    .right-side{
+        .connect-btn{
+            user-select: none;
+            padding: 8px 29px;
+            background-color: $primary;
+            border-radius: 8px;
+            span{
+                font-family: 'Inter';
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+            transition: all linear 0.2s;
+            cursor: pointer;
+            &:active{
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}
